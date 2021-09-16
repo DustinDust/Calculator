@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("http://fonts.cdnfonts.com/css/common-pixel");
+
+html {
+  font-family: "VT323", "Common Pixel", monospace;
+  font-size: 20px;
+}
+body {
+  margin: 0px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+button {
+  font-family: "VT323";
+  font-size: 2rem;
+  border: solid #22577a;
+  color: #22577a;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #22577a;
+  color: #80ed99;
+  border: solid #80ed99;
+}
+
+.display {
+  background-color: #80ed99;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-bottom: 4px solid #38a3a5;
+}
+.display > div {
+  overflow-x: scroll;
+}
+#input {
+  max-width: calc(22vw - 2px);
+  margin: 0px;
+  text-align: left;
+  font-family: "VT323";
+  font-size: 3rem;
+  border: none;
+  background-color: #80ed99;
+}
+
+#output {
+  margin: 0px;
+  text-align: right;
+  font-size: 2rem;
+}
+.operator {
+  background-color: #e7eab5;
+}
+.clear {
+  background-color: #e05d5d;
+}
+
+.delete {
+  background-color: #ffb344;
+}
+
+.equal {
+  background-color: #e7eab5;
+}
+
+.calculator {
+  width: 22vw;
+  height: 70vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1vmin;
+  border: 2vmin solid #38a3a5;
+  border-top: 7vmin solid #2d8385;
+  border-radius: 10px;
+  background-color: #38a3a5;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: stretch;
+  flex-grow: 1;
+  gap: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
